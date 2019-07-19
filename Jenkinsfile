@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'    
-		sh """sudo apt-get install python-pip
+		sh """apt-get install python-pip
 		      pip install -r requirements.txt
 		      python setup.py build"""
             }
